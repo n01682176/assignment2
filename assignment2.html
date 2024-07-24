@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Hobby</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, h2, h3, p, ul, ol, li, table, th, td, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+h1{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #b6b8ff;
+}
+
+/* Header styles */
+header {
+    background-color: #aa174d;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Main content styles */
+main {
+    padding: 2em;
+}
+
+/* Section styles */
+section {
+    margin: 2em 0;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5em 0 0.2em;
+}
+
+input, textarea, button {
+    padding: 0.5em;
+    margin: 0.2em 0 1em;
+}
+
+button {
+    background-color:green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 1em 0;
+        padding: 1em;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+
+    table, th, td {
+        font-size: 0.8em;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dancing: The Happy Moments</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Dancing</h2>
+            <p>Dance is an art form, often classified as a sport, consisting of sequences of body movements with aesthetic and often symbolic value, either improvised or purposefully selected.</p>
+            <h3>Benefits of Photography</h3>
+            <ul>
+                <li>Boost Strength</li>
+                <li>Enhance mind creativity</li>
+                <li>best form of exercise</li>
+            </ul>
+            <h3>Popular dance Styles</h3>
+            <ol>
+                <li>Ballet dance</li>
+                <li>Ballroom dance</li>
+                <li>Hip Hop dance</li>
+            </ol>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <table>
+                <tr>
+                    <th>Image</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><img src="c:\Users\aapek\OneDrive\Documents\personal one\ballet.jpg" alt="Ballet"></td>
+                    <td>An image of ballet dance.</td>
+                </tr>
+                <tr>
+                    <td><img src="c:\Users\aapek\OneDrive\Documents\personal one\ballroom.jpg" alt="Ballroom"></td>
+                    <td>Ballroom dance picture.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Photography Hobby</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
